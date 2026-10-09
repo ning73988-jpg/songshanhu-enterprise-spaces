@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: tar -xzf site-source.tar.gz
+      - run: tar -xzf site-source-v2.tar.gz
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -29,6 +29,8 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
           NEXT_PUBLIC_BASE_PATH: /songshanhu-enterprise-spaces
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
