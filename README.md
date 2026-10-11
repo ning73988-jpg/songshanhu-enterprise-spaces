@@ -1,20 +1,19 @@
 # 松山湖产业招商网站
 
-这是根据 WorkBuddy 在线版及微信小程序演示工程合并制作的网页评审版。包含 19 条演示房源、搜索和筛选、园区目录、房源详情。图片、价格及房源状态均为演示资料，正式使用前需要核实并接入真实数据。
+网站：https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/
 
-## 本地运行
+根据《松山湖产业招商·招商运营一体化小程序完整方案》制作的网站版本，沿用小程序的蓝色视觉。包含找房源、地图入口、产业资源入口、我的及管理后台页面。
 
-需要 Node.js 22。
+## 当前数据状态
 
-```bash
-npm ci
-npm run dev
-```
+- 四张用户实拍照片分别属于四套不同房源。由于面积、租金和位置尚未核实，网站将其列为“实拍资料”，未作为在租房源发布。
+- 在租房源仅展示后台审核并发布的公开字段。目前尚无已发布房源。
+- 游客无法看到精准地图点位、园区私密信息、企业联系方式或管理员备注。
 
-## 发布
+## 管理后台
 
-推送到 `main` 后，GitHub Actions 会构建静态页面并发布到 GitHub Pages。首次发布时，在仓库 **Settings → Pages** 将 **Build and deployment → Source** 设为 **GitHub Actions**。
+网站已备好房源草稿、发布、图片和视频上传、预约线索处理的页面与数据库脚本。用户尚未创建 Supabase 项目，因此云端保存、登录、上传和预约目前不可用。开通时按源码包内 `supabase/README.md` 的步骤配置。
 
-网址：<https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/>
+## 源码与发布
 
-当前为纯静态演示站，暂无后台数据库、真实短信登录和在线报备服务。
+完整网站源码位于 `site-source-v3.tar.gz`，包含 Supabase 数据表与权限脚本。GitHub Actions 从该源码包构建并发布到 GitHub Pages。发布记录见 Actions。
