@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: tar -xzf site-source-v2.tar.gz
+      - run: tar -xzf site-source-v3.tar.gz
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
