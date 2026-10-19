@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: tar -xzf site-source-v3.tar.gz
+      - name: Version browser configuration
+        run: sed -i 's/src="config.js[^\"]*"/src="config.js?v=${{ github.sha }}"/' public/experience/index.html
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -43,3 +45,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
