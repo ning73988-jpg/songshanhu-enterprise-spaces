@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: tar -xzf site-source-v3.tar.gz
+      - name: Apply source update
+        run: base64 --decode site-update.tar.gz.b64 | tar -xz
       - name: Version browser configuration
         run: sed -i 's/src="config.js[^\"]*"/src="config.js?v=${{ github.sha }}"/' public/experience/index.html
       - uses: actions/setup-node@v4
@@ -45,4 +47,5 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
 
