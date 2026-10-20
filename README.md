@@ -4,6 +4,12 @@
 
 **[打开网站](https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/experience/)** · **[管理后台](https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/admin/)**
 
+## 开发交接与历史
+
+[项目文档入口](docs/松山湖产业招商.md) · [完整开发交接](docs/松山湖产业招商-开发交接.md) · [开发时间线](docs/松山湖产业招商-开发时间线.md) · [GitHub 提交索引](docs/GitHub提交索引.md)
+
+交接文档记录 2026-10-09 至 2026-10-21 的实现、决定及原因、发布方式和待办。备份与服务连接核对见本机 Obsidian；公开文档不保存密钥或客户资料。
+
 ## 功能介绍
 
 | 功能 | 说明 |
