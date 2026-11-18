@@ -1,8 +1,8 @@
-# 松山湖产业招商网站
+# 登来产业招商网
 
 面向松山湖及周边企业的写字楼、厂房与产业空间信息网站，支持电脑和手机访问。
 
-**[打开网站](https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/experience/)** · **[管理后台](https://ning73988-jpg.github.io/songshanhu-enterprise-spaces/admin/)**
+**[打开网站](https://denglai.xin/experience/)** · **[管理后台](https://denglai.xin/admin/)**
 
 ## 开发交接与历史
 
